@@ -109,6 +109,37 @@ displayHTML(
 
 
 
+## Project Folder Structure
+
+
+
+```
+/
+   .gitignore
+   .README.md
+   docs/
+   <pkg_name>/
+      __init__.py
+      <package-source>.py
+      notebooks/
+         <databricks-notebooks-in-python-format>
+   tests/
+      __init__.py
+      func/
+         __init__.py
+         scenarios/
+            <gherkin scenarios>.scenario
+         tests/
+            test_<bla-blah>.py
+      unit/
+         __init__.py
+         test_<bla-blah>.py
+```
+
+
+
+
+
 ## Running Tests
 
 Install pytest (into the right virtual environment):
